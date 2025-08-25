@@ -49,11 +49,14 @@ export function useSessionValidateVoter() {
       setHash(hash);
       setIsConfirming(true);
 
-      const receipt = await publicClient.waitForTransactionReceipt({
-        hash,
-      });
+      // const receipt = await publicClient.waitForTransactionReceipt({
+      //   hash,
+      // });
 
-      if (receipt.status === "success") {
+      //if (receipt.status === "success") {
+
+        
+      if (true) {
         setIsSuccess(true);
         return {
           success: true,
